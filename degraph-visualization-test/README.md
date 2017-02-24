@@ -1,0 +1,1 @@
+Simple project with a degraph configuration file to generate a `.graphml` file that can be rendered with [yed](http://www.yworks.com/products/yed).

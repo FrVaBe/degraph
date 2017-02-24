@@ -1,2 +1,3 @@
 # degraph
-Degraph related tests and showcases
+
+[Degraph](http://blog.schauderhaft.de/degraph/) related tests and showcases.
