@@ -1,5 +1,5 @@
 package de.frvabe.b;
 
-public class B {
+public class B2 {
 
 }

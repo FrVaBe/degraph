@@ -1,5 +1,5 @@
 package de.frvabe;
 
-class Include {
+public class Include {
 
 }
