@@ -56,9 +56,9 @@ This configuration will group the code into _slices_. Patterns are used to find 
 
 The configuration format is described in the [Degraph documentation](http://blog.schauderhaft.de/degraph/documentation.html#the-configuration-file-format). What you need to understand is that not the _slicinglabel_ (here 'packages') will (necessarily) be a slice in the output. Instead pattern can have _naming parts_ (_'(*)'_) that will build the name of the slice.
 
-For example the `de.frvabe.(*).*` pattern will find all classes with a `de.frvabe.` prefix and a `.*` suffix. In between there is the pattern for the naming part `(*)` (the single star represents an arbitrary number (0-n) of arbitrary characters without dots!). The classes of the packages `de.frvabe.a` and `de.frvabe.b` will match the pattern and be group to the slices `a` and `b`. This is exactly what I wanted.
+For example the `de.frvabe.(*).*` pattern will find all classes with a `de.frvabe.` prefix and a `.*` suffix. In between there is the pattern for the naming part `(*)` (the single star represents an arbitrary number (0-n) of arbitrary characters without dots!). The classes of the packages `de.frvabe.a` and `de.frvabe.b` will match the pattern and be grouped to the slices `a` and `b`. This is exactly what I wanted.
 
-Running degraph on this project with this configuration (see [run-degraph.bat](src/main/degraph/run-degraph.bat)) will generate two `graphml` files (because I have two Degraph configuration files) that. These can be opened with [yed](http://www.yworks.com/products/yed) to draw the desired diagrams. The Degraph documentation has a short and nice How-To an [working with yet](http://blog.schauderhaft.de/degraph/documentation.html#working-with-yed).
+Running Degraph on this project with the above configuration (see [run-degraph.bat](src/main/degraph/run-degraph.bat)) will generate two `graphml` files (because I have two Degraph configuration files). These can be opened with [yed](http://www.yworks.com/products/yed) to draw the desired diagrams. The Degraph documentation has a short and nice How-To an [working with yet](http://blog.schauderhaft.de/degraph/documentation.html#working-with-yed).
 
 The following diagram was made with the [packages.config](src/main/degraph/packages.config) configuration. Degraph detected a dependency cycle between two packages.
 
@@ -68,7 +68,7 @@ In the second configuration ([packagesWithExclude.config](src/main/degraph/packa
 
 ![packages](src/main/degraph/yed/packagesWithoutCycle.png)
 
-Of course you should better fix the code instead the Degraph configuration but here I wanted to document how to exclude sources from the Degraph analysis ;-)
+Of course you should better fix the code instead of the Degraph configuration but here I wanted to document how to exclude sources from the Degraph analysis ;-)
 
 All in all using **Degraph** with **yed** is not a "plug and play" solution. A little setup and work has to be done, but in the end the result is remarkable.
 
