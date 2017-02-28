@@ -7,3 +7,4 @@ call mvn -f ../../../pom.xml clean install
 mkdir ..\..\..\target\degraph
 call degraph -f packages.config
 call degraph -f packagesWithExclude.config
+call degraph -f packagesWithNamedSlices.config
