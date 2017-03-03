@@ -47,8 +47,7 @@ public class PackageDependenciesTest {
      */
     @Test
     public void validDependency() {
-        assertThat(
-                classpath()
+        assertThat(classpath()
                 .including("de.frvabe.a.*")
                 .including("de.frvabe.b.*")
                 .withSlicing("packages",
@@ -69,8 +68,7 @@ public class PackageDependenciesTest {
      */
     @Test(expected = AssertionError.class)
     public void invalidDependency() {
-        assertThat(
-                classpath()
+        assertThat(classpath()
                 .including("de.frvabe.a.*")
                 .including("de.frvabe.b.*")
                 .withSlicing("packages",
