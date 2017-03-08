@@ -16,6 +16,6 @@ This project mainly demonstrates
 * [Degraph](http://blog.schauderhaft.de/degraph/)
 * Degraph - [Testing of Dependencies](http://blog.schauderhaft.de/degraph/documentation.html#testing-of-dependencies)
 
-**Pro Top**
+**Pro Tip**
 
 If you run into an `IllegalArgumentException` while testing your code base, you possibly have the wrong `asm` version on your classpath (see Degraph issue [#82](https://github.com/schauder/degraph/issues/82)). In this case the easiest workaround is to move the degraph tests into a separate module.
