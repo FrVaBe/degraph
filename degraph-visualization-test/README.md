@@ -72,7 +72,7 @@ Of course you should better fix the code instead of the Degraph configuration bu
 
 All in all using **Degraph** with **yEd** is not a "plug and play" solution. A little setup and work has to be done, but in the end the result is remarkable.
 
-Beside just generating diagrams Degraph can also be used to test dependencies during the project build. That helps to keep the code free from unwanted code dependencies (e.g. to enforce rules like 'the business logic code should not depend on the UI code'). I'm already eager to try this feature.
+Beside just generating diagrams Degraph can also be used to test dependencies during the project build. That helps to keep the code free from unwanted code dependencies (e.g. to enforce rules like 'the business logic code should not depend on the UI code'). If you are interested in this you should have a look at my [degraph-testing-demo](../degraph-testing-demo) sample application.
 
 Thanks to:
 * [Degraph](http://blog.schauderhaft.de/degraph) and its author [Jens Schauder](https://twitter.com/jensschauder)

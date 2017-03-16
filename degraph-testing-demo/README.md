@@ -1,15 +1,20 @@
+_If you are not familiar with [Degraph](http://blog.schauderhaft.de/degraph/) yet I recommend to read the Degraph [documentation](http://blog.schauderhaft.de/degraph/documentation.html) first and to have a look at my [degraph-visualization-test](../degraph-visualization-test) demo._
+
 # Degraph Testing Demo
 
-A sample project which uses `degraph-check` to write unit tests that check package dependencies.
+This is a sample project which uses `degraph-check` to write unit tests that check package dependencies.
 
-The package dependencies of this project look like that:
+
+The package dependencies of this project look like this:
 
 ![package dependencies](src/main/degraph/yEd/packages.png)
 
+
+
 This project mainly demonstrates
 * which project dependencies are needed (Degraph, Hamcrest and JUnit)  
-[see [pom.xml](pom.xml)]
-* simple usage examples of the Degraph [Java Constraints DSL](http://blog.schauderhaft.de/degraph/documentation.html#java-constraints-dsl)  
+ to write dependecy tests with Degraph <br/>[see [pom.xml](pom.xml)]
+* simple usage examples of the Degraph [Java Constraints DSL](http://blog.schauderhaft.de/degraph/documentation.html#java-constraints-dsl)<br/>
 [see [PackageDependenciesTest](src/test/java/de/frvabe/PackageDependenciesTest.java)]
 
 **Links**
